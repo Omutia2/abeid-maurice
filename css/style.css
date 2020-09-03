@@ -69,3 +69,12 @@ body {
 .section {
   margin-top: 40px;
 }
+
+.project-title {
+  font-size: 20px;
+
+}
+
+.project-wrapper {
+  display: flex;
+}
