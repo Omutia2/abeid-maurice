@@ -18,3 +18,54 @@ body {
   align-items: center;
   padding: 20px 0;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #2c2c2c;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #9c9b9b;
+  padding: 12px;
+  border-radius: 16px;
+  width: 50%;
+  margin: 12px;
+}
+
+.profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.profile-details {
+  margin-left: 12px;
+  text-align: left;
+}
+
+#profile-link {
+  text-decoration: none;
+}
+
+.subtitle {
+  text-decoration: none;
+  font-weight: 500;
+  color: #3b3b3b;
+}
+
+.section {
+  margin-top: 40px;
+}
