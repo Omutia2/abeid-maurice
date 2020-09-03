@@ -3,13 +3,50 @@ body {
 }
 
 .container {
-  max-width: 1100px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 24px;
+}
+
+@media (min-width: 567px) {
+  .container {
+    max-width: 567px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 760px;
+  }
+}
+@media (min-width: 1100px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#welcome-section {
+  height: 100vh;
 }
 
 .navbar {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #777777;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 .nav {
@@ -23,26 +60,49 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: calc(100vh - 64px);
 }
 
 .title {
-  font-size: 36px;
+  font-size: 48px;
   color: #2c2c2c;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
+@media (min-width: 768px) {
+  .text-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #585858;
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 0 -12px;
+  }
 }
 
 .profile-container {
-  display: flex;
-  align-items: center;
   border: 1px solid #9c9b9b;
   padding: 12px;
   border-radius: 16px;
-  width: 50%;
   margin: 12px;
+}
+
+@media (min-width: 768px) {
+  .profile-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
 }
 
 .profile-img {
@@ -67,14 +127,36 @@ body {
 }
 
 .section {
-  margin-top: 40px;
+  margin: 24px 0;
+}
+
+.project-tile {
+  margin: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  border-radius: 12px;
+  width: 25%;
+  transition: all 150ms ease-in-out;
+}
+
+.project-tile:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .project-title {
   font-size: 20px;
-
+  color: #414141;
 }
 
 .project-wrapper {
   display: flex;
+  margin: 0 -12px;
+  flex-wrap: wrap;
+}
+
+.main-title {
+  font-size: 36px;
+  color: #222222;
 }
